@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+.bg-light
+{
+    background: #000;
+}
+
+.btn
+{
+    border:none;
+    background: cyan;
+    font-weight: bold;
+}
+
+.p-0
+{
+    padding:0 !important;
+}
+
+.btn:hover{
+    background:purple;
+}

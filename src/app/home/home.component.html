@@ -1,0 +1,36 @@
+<div class="containter-fluid">
+    <div class="row">
+        <div class="col p-0  col-12 ">
+            <div #header class="header d-flex justify-content-center align-items-center">
+                <h1 class="text-center  text-white display-1">House of Hairology</h1><br>
+                <img class="bg-img" src="../../assets/logo.png"/>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container container-bg" style="height: 1000vh">
+    <div class="popularProducts" #popularProducts>
+        <div class="row">
+            <div class="col p-0 col-12">
+                <h1 class="display-3 my-5 text-secondary">Popular Products</h1>
+            </div>
+        </div>
+        <div class="row p-0 w-100">
+            <div *ngFor="let i of arr" class="col p-1 my-3 col-md-3 col-sm-12">
+                <div class="card">
+                    <img src="../../assets/logo.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Bundle</h5>
+                        <h5 class="card-subtitle text-center">$75.00</h5>
+                        <button href="#" type="button" class="my-3 btn btn w-100 btn-primary ">Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col- text-center">
+                <button type="button" class="my-5 btn btn-lg btn-primary">All Products</button>
+            </div>
+        </div>
+    </div>
+</div>
