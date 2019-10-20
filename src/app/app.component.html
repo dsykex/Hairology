@@ -1,16 +1,22 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#"><img src="../assets/logo.png" width="60" height="60" alt="" /></a>
+  <a class="navbar-brand" routerLink="/home"><img src="../assets/logo.png" width="60" height="60" alt="" /></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
-      <a class="nav-item nav-link active" routerLink="/home">Home</a>
-      <a class="nav-item nav-link" routerLink="/services">Services</a>
-      <a class="nav-item nav-link" routerLinks="/products">Products</a>
-      <a class="nav-item nav-link" routerLink="/contact-us">Contact Us</a>
-      <!--<a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>-->
+      <a class="nav-item nav-link" routerLink="/services">Book An Appointment</a>
+      <a class="nav-item nav-link" routerLink="/products">Products</a>
+      <a class="nav-item nav-link" routerLink="/contact">Contact</a>
     </div>
   </div>
 </nav>
+
+<div class="containter-fluid">
+    <div #header class="header d-flex  justify-content-center align-items-center">
+        <h1 class="text-center display-1">House of Hairology</h1><br>
+        <div class="bg-gradient"></div>
+    </div>
+</div>
+
 <router-outlet></router-outlet>

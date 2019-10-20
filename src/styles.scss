@@ -7,8 +7,20 @@
 .btn
 {
     border:none;
-    background: cyan;
+    background: #2cbcd0; 
     font-weight: bold;
+    color:#fff;
+}
+
+.btn-link, .btn-clear
+{
+    background: none;
+}
+
+.header-txt {
+    font-size:70px;
+    color:rgba(65,201,220,1);
+    font-family: 'Niconne', 'cursive';
 }
 
 .p-0
@@ -18,4 +30,5 @@
 
 .btn:hover{
     background:purple;
+    color:#fff;
 }

@@ -1,36 +1,37 @@
-<div class="containter-fluid">
-    <div class="row">
-        <div class="col p-0  col-12 ">
-            <div #header class="header d-flex justify-content-center align-items-center">
-                <h1 class="text-center  text-white display-1">House of Hairology</h1><br>
-                <img class="bg-img" src="../../assets/logo.png"/>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="container container-bg" style="height: 1000vh">
+
+<div class="container text-center container-bg">
     <div class="popularProducts" #popularProducts>
-        <div class="row">
-            <div class="col p-0 col-12">
-                <h1 class="display-3 my-5 text-secondary">Popular Products</h1>
-            </div>
-        </div>
-        <div class="row p-0 w-100">
-            <div *ngFor="let i of arr" class="col p-1 my-3 col-md-3 col-sm-12">
-                <div class="card">
-                    <img src="../../assets/logo.jpg" class="card-img-top" alt="...">
+        <h1 class="header-txt text-center display-2 py-4">Popular Products</h1>
+        <div class="row no-gutters">
+            <div *ngFor="let i of arr" class="p-0 col-sm-3">
+                <div class="card product">
+                    <div style="overflow:hidden;">
+                        <img src="../../assets/img/{{images[i]}}" class="card-img-top" alt="...">
+                    </div>
                     <div class="card-body">
-                        <h5 class="card-title text-center">Bundle</h5>
-                        <h5 class="card-subtitle text-center">$75.00</h5>
-                        <button href="#" type="button" class="my-3 btn btn w-100 btn-primary ">Details</button>
+                        <h5 class="card-subtitle text-center price">$75.00</h5>
+                        <button routerLink="/product/{{i}}" type="button" class="my-3 upcase-btn btn w-100 btn-primary ">Details</button>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col col- text-center">
-                <button type="button" class="my-5 btn btn-lg btn-primary">All Products</button>
+    </div>
+    <button  class="text-center upcase-btn my-5 btn">ALL PRODUCTS</button>
+    <div class="row">
+        <div class="col p-0 col-12">
+            <h1 class="display-3 my-5 text-secondary">Services</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div *ngFor="let i of arr" class="col p-1 my-3 col-md-3 col-sm-12">
+            <div class="card product">
+                <img src="../../assets/logo.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title name">Box Braids</h5>
+                    <button href="#" type="button" class="my-3 btn btn-link w-100 btn-primary ">Details</button>
+                </div>
             </div>
         </div>
     </div>
+    <hr>
 </div>
