@@ -17,6 +17,8 @@ export class HomeComponent implements OnInit {
   @ViewChild("header", {read: null, static: true}) header: ElementRef;
   @ViewChild("popularProducts", {read: null, static: true}) popularProducts: ElementRef;
 
+  @ViewChild("services", {read: null, static: true}) services: ElementRef;
+
   public arr: any = [1,2,3,4];
   constructor() { }
 
@@ -45,7 +47,7 @@ export class HomeComponent implements OnInit {
     .addTo(ctrl);*/
 
     window.addEventListener('scroll', event => {
-      console.log(this.popularProducts.nativeElement.scrollHeight + ' // ' + (document.documentElement.scrollHeight));
+      console.log(window.scrollY + ' // ' + (this.popularProducts.nativeElement.scrollHeight));
     });
     
   }

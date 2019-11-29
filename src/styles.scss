@@ -20,7 +20,18 @@
 .header-txt {
     font-size:70px;
     color:rgba(65,201,220,1);
-    font-family: 'Niconne', 'cursive';
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    border-bottom:2px solid #2cbcd0;
+}
+
+.text-blue{
+    color: rgba(65,201,220,1);
+}
+
+*{
+    font-family: 'Open Sans Condensed', sans-serif !important;
 }
 
 .p-0
